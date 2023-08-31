@@ -17,7 +17,9 @@ h2{
 .partners{
     flex-direction: column;
     &-link{
-    &:nth-child(n+8){
+        display: flex;
+        flex-direction: column;
+    & :nth-child(n+7){
         display: none;
     }
     }
@@ -40,9 +42,13 @@ h2{
     }
     .partners{
         &-link{
+            flex-direction: row;
             flex-wrap: wrap;
             a{
                 width: 33.3%;
+            }
+            & :nth-child(n+7){
+                display: flex;
             }
         }
     }

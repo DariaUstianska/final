@@ -76,7 +76,6 @@ div.wrapper {
   display: flex;
 }
 .partners-link a {
-  display: block;
   height: 120px;
   display: flex;
   justify-content: center;
