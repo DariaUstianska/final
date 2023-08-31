@@ -1,0 +1,47 @@
+@use 'variables' as *;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.link{
+    display:flex;
+    align-items: center;
+}
+
+a.link{
+    color:$active-regular;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+a.link:hover{
+    color: $accent;
+}
+
+a.link::after{    
+    content: "";
+    display: inline-block;
+    background-image: url(../images/arrows/Arrow2.png);
+    width: 12px;
+    height: 12px;
+}
+
+a.link:hover::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/arrows/Arrow.png);
+    width: 12px;
+    height: 12px;
+}
+
+h2{
+    background: $gradient-redtext;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 38px;
+    font-weight: 700;
+}

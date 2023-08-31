@@ -1,0 +1,127 @@
+@use 'variables' as *;
+
+section.homepage-top{
+    background: $gradient-supersoft;
+    border-radius: 0px 0px 12px 12px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+section.homepage-top::before{
+    content: "";
+    height: 10px;
+    display: block;
+    border-radius: 0px 0px 12px 12px;
+    background-color: $shadow-dark;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+
+}
+
+section.homepage-top::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: $shadow-light;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+}
+
+.card p{
+    color:$basic-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.blocks{
+    display: flex;
+    .card{
+        h3{
+            color:$active-regular;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+    
+        &-img{
+            width: 92px;
+            height: 92px;
+            border-radius: 24px;
+            background-color: $basic-white;
+            padding: 14px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+div.wrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partners{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h3{
+        color: $main-regular;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &-link{
+        display: flex;
+        a{
+            display: block;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        &.hillel{
+            background-color: #1C4280;
+        }
+        &.wannabiz{
+            background-color: #143646;
+        }
+        &.tapgerine{
+            background-color: #F48B30;
+        }
+        &.Dlook{
+            background-color: #9E4DC3;
+        }
+        &.orangear{
+            background-color: #FD9339;
+        }
+        &.adtellige{
+            background-color: #E2E2E4;
+        }
+        &.clickky{
+            background-color: #C71C36;
+        }
+        &.ecolease{
+            background-color: #DCF3F9;
+        }
+        &.infratek{
+            background-color: #EAEAEA;
+        }
+        &.citypark{
+            background-color: #282240;
+        }
+        &.artprint{
+            background-color: #1D4568;
+        }
+        &.ultimatecard{
+            background-color: #000;
+        }
+        }
+    }
+}
+

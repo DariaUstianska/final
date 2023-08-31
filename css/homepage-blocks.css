@@ -1,0 +1,122 @@
+section.homepage-top {
+  background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643E72 100%);
+  border-radius: 0px 0px 12px 12px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+section.homepage-top::before {
+  content: "";
+  height: 10px;
+  display: block;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #CACADB;
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  right: 20px;
+}
+
+section.homepage-top::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #E7E7F2;
+  bottom: -20px;
+  left: 40px;
+  right: 40px;
+}
+
+.card p {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.blocks {
+  display: flex;
+}
+.blocks .card h3 {
+  color: #24A3FF;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.blocks .card-img {
+  width: 92px;
+  height: 92px;
+  border-radius: 24px;
+  background-color: #FFF;
+  padding: 14px;
+  margin-bottom: 30px;
+}
+
+div.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partners {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.partners h3 {
+  color: #323264;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.partners-link {
+  display: flex;
+}
+.partners-link a {
+  display: block;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners-link a.hillel {
+  background-color: #1C4280;
+}
+.partners-link a.wannabiz {
+  background-color: #143646;
+}
+.partners-link a.tapgerine {
+  background-color: #F48B30;
+}
+.partners-link a.Dlook {
+  background-color: #9E4DC3;
+}
+.partners-link a.orangear {
+  background-color: #FD9339;
+}
+.partners-link a.adtellige {
+  background-color: #E2E2E4;
+}
+.partners-link a.clickky {
+  background-color: #C71C36;
+}
+.partners-link a.ecolease {
+  background-color: #DCF3F9;
+}
+.partners-link a.infratek {
+  background-color: #EAEAEA;
+}
+.partners-link a.citypark {
+  background-color: #282240;
+}
+.partners-link a.artprint {
+  background-color: #1D4568;
+}
+.partners-link a.ultimatecard {
+  background-color: #000;
+}
+
+/*# sourceMappingURL=homepage-blocks.css.map */
