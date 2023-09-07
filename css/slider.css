@@ -1,0 +1,47 @@
+section.slider {
+  padding-top: 60px;
+}
+
+div.slider-card {
+  background-color: #f5f5fa;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+div.slider-card h2 {
+  margin-bottom: 30px;
+}
+div.slider-card .content {
+  padding: 30px;
+}
+div.slider-card p {
+  color: #B3B3BA;
+}
+div.slider-card p.name {
+  font-size: 16px;
+  font-weight: 700;
+}
+div.slider-card p.post {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+div.slider-card img {
+  object-fit: cover;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.pagination a {
+  background-image: url(../images/slider/ellipse/Ellipse.png);
+  width: 16px;
+  height: 16px;
+}
+.pagination a.active {
+  background-image: url(../images/slider/ellipse/Ellipseact.png);
+}
+
+/*# sourceMappingURL=slider.css.map */

@@ -1,0 +1,47 @@
+@use 'variables' as *;
+
+section.slider{
+    padding-top: 60px;
+}
+
+div.slider-card{
+    background-color: $grey-background;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    h2{
+        margin-bottom: 30px;
+    }
+    .content{
+        padding: 30px;
+    }
+    p{
+        color: $grey-text;
+        &.name{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &.post{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+    img{
+        object-fit: cover;
+    }
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    a{
+        background-image: url(../images/slider/ellipse/Ellipse.png);
+        width: 16px;
+        height: 16px;
+        &.active{
+            background-image: url(../images/slider/ellipse/Ellipseact.png);
+        }
+    }
+}
