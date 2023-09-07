@@ -1,5 +1,6 @@
 .wrapper{
-    width: 315px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .blocks{
@@ -27,7 +28,8 @@ h2{
 
 @media (min-width:768px) {
     .wrapper{
-        width: 648px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
     .blocks{
         flex-direction: row;
@@ -55,9 +57,6 @@ h2{
 }
 
 @media (min-width:1024px) {
-    .wrapper{
-        width: 904px;
-    }
     .blocks{
         .card{
             width: 261px;
@@ -70,12 +69,22 @@ h2{
             }
         }
     }
+    div.slider-card{
+        position: relative;
+        .content{
+            margin-left: 400px;
+        }
+        img{
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            width: 400px;
+            height: 100%;
+        }
+    }
 }
 
 @media (min-width:1440px) {
-    .wrapper{
-        width: 1320px;
-    }
     .blocks{
         .card{
             width: 400px;
@@ -85,7 +94,8 @@ h2{
 
 @media (min-width:1920px) {
     .wrapper{
-        width: 1600px;
+        padding-left: 160px;
+        padding-right: 160px;
     }
     .blocks{
         .card{
