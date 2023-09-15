@@ -4,11 +4,8 @@
 }
 
 .blocks{
-    flex-direction: column;
-    gap:30px;
-    .card{
-        width: 315px;
-    }
+    grid-template-columns: 1fr;
+    grid-row-gap:30px;
 }
 
 h2{
@@ -16,14 +13,16 @@ h2{
 }
 
 .partners{
-    flex-direction: column;
     &-link{
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
     & :nth-child(n+7){
         display: none;
     }
     }
+}
+
+div.publications{
+    grid-template-columns: 1fr;
 }
 
 @media (min-width:768px) {
@@ -32,41 +31,36 @@ h2{
         padding-right: 60px;
     }
     .blocks{
-        flex-direction: row;
-        gap:60px;
-        flex-wrap: wrap;
-        .card{
-            width: 294px;
-        }
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
     }
     h2{
         margin-bottom: 60px;
     }
     .partners{
         &-link{
-            flex-direction: row;
-            flex-wrap: wrap;
-            a{
-                width: 33.3%;
-            }
+            grid-template-columns: repeat(3, 1fr);
             & :nth-child(n+7){
                 display: flex;
             }
+        }
+    }
+    div.publications{
+        grid-template-columns: 1fr 1fr;
+        :nth-child(3){
+            grid-column-start: 1;
+            grid-column-end: -1;
         }
     }
 }
 
 @media (min-width:1024px) {
     .blocks{
-        .card{
-            width: 261px;
-        }
+        grid-template-columns: repeat(3, 1fr);
     }
     .partners{
         &-link{
-            a{
-                width: 25%;
-            }
+            grid-template-columns: repeat(4, 1fr);
         }
     }
     div.slider-card{
@@ -82,12 +76,11 @@ h2{
             height: 100%;
         }
     }
-}
-
-@media (min-width:1440px) {
-    .blocks{
-        .card{
-            width: 400px;
+    div.publications{
+        grid-template-columns: repeat(3, 1fr);
+        :nth-child(3){
+            grid-column-start: auto;
+            grid-column-end: auto;
         }
     }
 }
@@ -96,11 +89,6 @@ h2{
     .wrapper{
         padding-left: 160px;
         padding-right: 160px;
-    }
-    .blocks{
-        .card{
-            width: 493px;
-        }
     }
     .partners{
         &-wrapper{

@@ -39,7 +39,7 @@ section.homepage-top::after{
 }
 
 .blocks{
-    display: flex;
+    display: grid;
     .card{
         h3{
             color:$active-regular;
@@ -65,7 +65,6 @@ div.wrapper{
 }
 
 .partners{
-    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
     h3{
@@ -78,9 +77,9 @@ div.wrapper{
         text-align: center;
     }
     &-link{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
         a{
-            display: block;
             height: 120px;
             display: flex;
             justify-content: center;

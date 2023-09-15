@@ -36,7 +36,7 @@ section.homepage-top::after {
 }
 
 .blocks {
-  display: flex;
+  display: grid;
 }
 .blocks .card h3 {
   color: #24A3FF;
@@ -59,7 +59,6 @@ div.wrapper {
 }
 
 .partners {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -73,10 +72,10 @@ div.wrapper {
   text-align: center;
 }
 .partners-link {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .partners-link a {
-  display: block;
   height: 120px;
   display: flex;
   justify-content: center;
