@@ -1,0 +1,83 @@
+@use 'variables' as *;
+
+.footer{
+    background-color: $grey-background;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    &__location{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 10px;
+        address{
+            color: $main-regular;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        a{
+            color: $active-regular;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        a:hover{
+            color: $accent;
+        }
+    }
+    &__communications{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+    &__copyright{
+        color: $grey-text;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__tel{
+        a{
+            color: $main-alt;
+            text-align: right;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    &__mail{
+        a{
+            color: $active-regular;
+            font-size: 16px;
+            font-weight: 700;
+            &:hover{
+                color: $accent;
+            }
+        }
+    }
+    &__socialmedia:hover{
+        svg{
+            path{
+                fill:$accent;
+            }
+            rect{
+                fill:$accent;
+            }
+        }
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        top: 30px;
+        height: 2px;
+        width: 100%;
+        background-color: $grey-separator;
+    }
+}
