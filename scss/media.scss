@@ -101,7 +101,9 @@ div.publications{
             .logo{
                 padding: 0;
                 .logo-icon{
-                    background-image: url(../../final/images/logos/Logo-desktop.svg);
+                    background-image: url(../images/logos/Logo.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
                     width: 130px;
                     height: 60px;
                 }
