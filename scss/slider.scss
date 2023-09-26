@@ -37,11 +37,14 @@ div.slider-card{
     justify-content: center;
     gap:15px;
     a{
-        background-image: url(../images/slider/ellipse/Ellipse.png);
+        display: block;
+        border-radius: 50%;
         width: 16px;
         height: 16px;
+        background-color: $active-regular;
+        opacity: 0.2;
         &.active{
-            background-image: url(../images/slider/ellipse/Ellipseact.png);
+            opacity: 1;
         }
     }
 }

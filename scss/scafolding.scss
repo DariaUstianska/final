@@ -4,6 +4,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+*{
+    scroll-behavior: smooth;
+}
+
 div.link{
     display:flex;
     align-items: center;
@@ -24,7 +28,7 @@ a.link:hover{
 a.link::after{    
     content: "";
     display: inline-block;
-    background-image: url(../images/arrows/Arrow2.png);
+    background-image: url(../images/arrows/arrow.svg);
     width: 12px;
     height: 12px;
 }
@@ -32,7 +36,7 @@ a.link::after{
 a.link:hover::after{
     content: "";
     display: inline-block;
-    background-image: url(../images/arrows/Arrow.png);
+    background-image: url(../images/arrows/arrow-hover.svg);
     width: 12px;
     height: 12px;
 }

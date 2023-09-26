@@ -36,12 +36,15 @@ div.slider-card img {
   gap: 15px;
 }
 .pagination a {
-  background-image: url(../images/slider/ellipse/Ellipse.png);
+  display: block;
+  border-radius: 50%;
   width: 16px;
   height: 16px;
+  background-color: #24A3FF;
+  opacity: 0.2;
 }
 .pagination a.active {
-  background-image: url(../images/slider/ellipse/Ellipseact.png);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=slider.css.map */

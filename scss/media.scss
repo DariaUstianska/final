@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .wrapper{
     padding-left: 30px;
     padding-right: 30px;
@@ -23,6 +25,10 @@ h2{
 
 div.publications{
     grid-template-columns: 1fr;
+}
+
+.mobile-hidden{
+    display: none;
 }
 
 @media (min-width:768px) {
@@ -51,6 +57,132 @@ div.publications{
             grid-column-start: 1;
             grid-column-end: -1;
         }
+    }
+    .mobile-hidden{
+        display: inherit;
+        *{
+            display: inherit;
+        }
+    }
+    .header{
+        grid-template-areas: "contacts" "logo" "nav";
+        gap: 30px;
+        &__burger{
+            display: none;
+        }
+        &__nav{
+            grid-auto-flow: column;
+            justify-content: start;
+            a{
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+        &__contacts{
+            justify-content: flex-start;
+            background-color: inherit;
+            padding: 0;
+        }
+        &__socialmedia{
+            display: block;
+            &:hover{
+                svg{
+                    path{
+                        fill:#F0145A
+                    }
+                    rect{
+                        fill:#F0145A;
+                    }
+                }
+            }
+        }
+        &__logo-btn{
+            padding: 0;
+            .logo{
+                padding: 0;
+                .logo-icon{
+                    background-image: url(../../final/images/logos/Logo-desktop.svg);
+                    width: 130px;
+                    height: 60px;
+                }
+            }
+            .logo__breadcrumbs{
+                display: none;
+            }
+        }
+    }
+    .hero{
+        padding: 50px 60px 30px 60px;
+        &__text{
+            width: 100%;
+            margin-bottom: 125px;
+        }
+    }
+
+    .scroll{
+        &__description{
+            padding-left: 60px;
+            padding-right: 60px;
+            &::before {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+            h4{
+                font-size: 30px;
+            }
+        }
+        &__content{
+            padding-left: 60px;
+            a{
+                font-size: 38px;
+            }
+        }
+    }
+    .separator{
+        position: relative;
+        padding-left: 18px;
+        text-align: center;
+        line-height: 25px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: 6px;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: $grey-separator;
+        }
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        &__location{
+            grid-row: 1/2;
+            justify-self: start;
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            gap: 0px;
+        }
+        &__communications{
+            grid-column: 1/3;
+            grid-row: 2/3;
+            justify-self: start;
+            flex-direction: row;
+            gap: 0px;
+        }
+        &__copyright{
+            text-align: right;
+        }
+        .separator{
+            &::before{
+                background-color: $grey-text;
+            }
+        }
+    }
+    .navbar{
+        display: none;
     }
 }
 
@@ -83,6 +215,96 @@ div.publications{
             grid-column-end: auto;
         }
     }
+
+    section.hero{
+        background-size: contain;
+    }
+
+    .hero{
+        &__text{
+            margin-bottom: 45px;
+        }
+    }
+
+    .header{
+        grid-template-areas: 
+            "logo contacts" 
+            "logo nav";
+        &__nav{
+            justify-content: flex-end;
+            a{
+                position: relative;
+                &:hover{
+                    &::after{
+                        content:'';
+                        position: absolute;
+                        height: 2px;
+                        width:100%;
+                        background-color: white;
+                        top: 20px;
+                        left:0;
+                    }
+                }
+                &:active{
+                    color: $accent;
+                    &::after{
+                        background-color: $accent;
+                    }
+                }
+            }
+        }
+        &__contacts{
+            justify-content: flex-end;
+        }
+
+    }
+    .scroll{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 124px;
+        &__link{
+            flex-shrink: 0;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 30px;
+            padding-left: 0px;
+            overflow: visible;
+            a{
+                font-size: 38px;
+            }
+        }
+        &__description{
+            gap: 0px;
+            position: relative;
+            padding-left: 0px;
+            padding-right: 0px;
+            &::before {
+                content: "";
+                display: block;
+                width: 4px;
+                height: 303px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: rgba(255, 255, 255, 0.50);
+                position: absolute;
+                top: -10px;
+                left: -60px;
+            }
+        }
+    }
+}
+
+@media (min-width:1440px){
+    .scroll{
+        padding-left: 180px;
+        padding-right: 180px;
+    }
 }
 
 @media (min-width:1920px) {
@@ -100,5 +322,9 @@ div.publications{
             border-radius: 12px;
             overflow: hidden;
         }
+    }
+    section.scroll{
+        padding-left: 280px;
+        padding-right: 280px;
     }
 }
