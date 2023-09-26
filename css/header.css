@@ -106,7 +106,7 @@ section.hero * {
 }
 .header__logo-btn .logo .logo-icon {
   display: block;
-  background-image: url(../../final/images/logos/Logo.svg);
+  background-image: url(../images/logos/Logo.svg);
   width: 70px;
   height: 32px;
 }
@@ -121,12 +121,12 @@ section.hero * {
   position: absolute;
   top: 0;
   left: 5px;
-  background-image: url(../../final/images/slashes/Slash.svg);
+  background-image: url(../images/slashes/Slash.svg);
   width: 11.617px;
   height: 26px;
 }
 .header__burger {
-  background-image: url(../../final/images/buttons/Hamburger-white.svg);
+  background-image: url(../images/buttons/Hamburger-white.svg);
   width: 34px;
   height: 34px;
 }
